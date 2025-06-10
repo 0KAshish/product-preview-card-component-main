@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Product preview card component</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      .bg-my-green {
+        background-color: hsl(158, 36%, 37%);
+      }
+      .bg-bg {
+        background-color: hsl(30, 38%, 92%);
+      }
+    </style>
+  </head>
+  <body
+    class="bg-bg grid place-content-center h-screen font-[Montserrat] text-sm"
+  >
+    <main
+      class="bg-white w-full max-w-xs md:max-w-lg grid md:grid-cols-2 rounded-md m-3"
+    >
+      <div
+        class="w-full bg-cover bg-center rounded-tl-md rounded-tr-md md:rounded-tl-md md:rounded-bl-md md:rounded-tr-none h-64 md:h-auto bg-[url('/images/image-product-mobile.jpg')] md:bg-[url('/images/image-product-desktop.jpg')]"
+      ></div>
+
+      <section class="p-5 grid items-center">
+        <p class="uppercase tracking-widest text-gray-400 text-sm">Perfume</p>
+
+        <h1 class="text-3xl font-[Fraunces] py-3 font-bold">
+          Gabrielle Essence Eau De Parfum
+        </h1>
+
+        <p class="font-light font-normal text-gray-400">
+          A floral, solar and voluptuous interpretation composed by Olivier
+          Polge, Perfumer-Creator for the House of CHANEL.
+        </p>
+
+        <p
+          class="font-[Fraunces] text-3xl py-3 text-green-700 flex gap-5 items-center font-bold"
+        >
+          $149.99
+          <span class="text-sm font-light line-through text-gray-400"
+            >$169.99</span
+          >
+        </p>
+
+        <button
+          class="bg-green-700 text-white rounded-md py-2 hover:bg-black hover:cursor-pointer flex justify-center gap-2 items-center"
+        >
+          <i class="fa-solid fa-cart-shopping font-xs"></i>
+          Add to Cart
+        </button>
+      </section>
+    </main>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Ashish Kumar Maurya</a>.
+    </div>
+    <script src="./js/config.js"></script>
+  </body>
+</html>
